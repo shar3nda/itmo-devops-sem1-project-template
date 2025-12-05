@@ -55,9 +55,12 @@ jobs:
           API_HOST: ${{ env.API_HOST }}
           DB_HOST: ${{ env.DB_HOST }}
           DB_PORT: 5432
-          DB_DB: ${{ secrets.DB_NAME }}
+          DB_NAME: ${{ secrets.DB_NAME }}
           DB_USER: ${{ secrets.DB_USER }}
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          YC_TOKEN: ${{ secrets.YC_TOKEN }}
+          YC_FOLDER_ID: ${{ secrets.YC_FOLDER_ID }}
+          YC_ZONE: ${{ secrets.YC_ZONE }}
 
       - run: |
           echo "Deployed server to ${API_HOST}"
@@ -70,7 +73,7 @@ jobs:
           API_HOST: ${{ env.API_HOST }}
           DB_HOST: ${{ env.DB_HOST }}
           DB_PORT: 5432
-          DB_DB: ${{ secrets.DB_NAME }}
+          DB_NAME: ${{ secrets.DB_NAME }}
           DB_USER: ${{ secrets.DB_USER }}
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
 
@@ -82,7 +85,7 @@ jobs:
           API_HOST: ${{ env.API_HOST }}
           DB_HOST: ${{ env.DB_HOST }}
           DB_PORT: 5432
-          DB_DB: ${{ secrets.DB_NAME }}
+          DB_NAME: ${{ secrets.DB_NAME }}
           DB_USER: ${{ secrets.DB_USER }}
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
 
@@ -94,7 +97,7 @@ jobs:
           API_HOST: ${{ env.API_HOST }}
           DB_HOST: ${{ env.DB_HOST }}
           DB_PORT: 5432
-          DB_DB: ${{ secrets.DB_NAME }}
+          DB_NAME: ${{ secrets.DB_NAME }}
           DB_USER: ${{ secrets.DB_USER }}
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
 
