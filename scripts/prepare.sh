@@ -1,5 +1,7 @@
 #!/bin/bash
 set -e
+set -o pipefail
+
 REPO_DIR=$(realpath $(dirname $(dirname "$0")))
 FULL_IMAGE_NAME="${DOCKERHUB_USERNAME}/${IMAGE_NAME}:${TAG}"
 
