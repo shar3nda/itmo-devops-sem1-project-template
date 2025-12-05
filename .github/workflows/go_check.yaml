@@ -66,6 +66,7 @@ jobs:
           YC_ZONE: ${{ secrets.YC_ZONE }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           PUBLIC_KEY: ${{ vars.PUBLIC_KEY }}
+          FULL_IMAGE_NAME: ${{ env.FULL_IMAGE_NAME }}
 
       - run: |
           echo "Deployed server to ${API_HOST}"
