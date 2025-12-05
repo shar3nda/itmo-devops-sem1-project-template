@@ -11,6 +11,7 @@ SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 INSTANCE_TYPE="standard-v1"
 
 curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
+source "$HOME/.bashrc"
 
 echo "Creating VM..."
 YC_INSTANCE_ID=$(yc compute instance create \
