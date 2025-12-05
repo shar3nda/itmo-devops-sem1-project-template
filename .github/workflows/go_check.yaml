@@ -45,10 +45,6 @@ jobs:
           DB_NAME=${{ secrets.DB_NAME }}
           EOF
 
-      - name: Install yc
-        run: |
-          curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
-
       - name: Run application
         id: run
         run: ./scripts/run.sh
