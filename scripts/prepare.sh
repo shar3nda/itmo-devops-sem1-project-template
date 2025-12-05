@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 REPO_DIR=$(realpath $(dirname $(dirname "$0")))
-FULL_IMAGE_NAME="${DOCKERHUB_USER}/${IMAGE_NAME}:${TAG}"
+FULL_IMAGE_NAME="${DOCKERHUB_USERNAME}/${IMAGE_NAME}:${TAG}"
 
 echo "$DOCKERHUB_TOKEN" | docker login --username "$DOCKERHUB_USERNAME" --password-stdin
 
